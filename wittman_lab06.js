@@ -31,6 +31,9 @@ function depthFirstSearch(graph, first) {
       if (!graph.processedList.includes(adjNodes[i])) {
         console.log(first + adjNodes[i]);
         depthFirstSearch(graph, adjNodes[i]);
+        if (graph.processedList.length ==  graph.numberOfVertices){
+          return;
+        }
         adjNodes = graph.AdjList.get(first);
       }
       if (i == adjNodes.length - 1) {
