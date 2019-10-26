@@ -59,14 +59,14 @@ g1.addEdge('E', 'F');
 g1.addEdge('E', 'C');
 g1.addEdge('C', 'F');
 
-console.log(g1.AdjList.get('A'))
-console.log(g1.AdjList.get('B'))
-console.log(g1.AdjList.get('C'))
-console.log(g1.AdjList.get('D'))
-console.log(g1.AdjList.get('E'))
-console.log(g1.AdjList.get('F'))
+console.log('A: ' + g1.AdjList.get('A'))
+console.log('B: ' + g1.AdjList.get('B'))
+console.log('C: ' + g1.AdjList.get('C'))
+console.log('D: ' + g1.AdjList.get('D'))
+console.log('E: ' + g1.AdjList.get('E'))
+console.log('F: ' + g1.AdjList.get('F'))
 
-console.log('Depth-first search');
+console.log('Depth-first search. First node = F');
 depthFirstSearch(g1, 'F');
 
 // Test 2
@@ -86,12 +86,12 @@ g2.addEdge('A', 'D');
 g2.addEdge('D', 'E');
 g2.addEdge('A', 'F');
 
-console.log(g2.AdjList.get('A'))
-console.log(g2.AdjList.get('B'))
-console.log(g2.AdjList.get('C'))
-console.log(g2.AdjList.get('D'))
-console.log(g2.AdjList.get('E'))
-console.log(g2.AdjList.get('F'))
+console.log('A: ' + g2.AdjList.get('A'))
+console.log('B: ' + g2.AdjList.get('B'))
+console.log('C: ' + g2.AdjList.get('C'))
+console.log('D: ' + g2.AdjList.get('D'))
+console.log('E: ' + g2.AdjList.get('E'))
+console.log('F: ' + g2.AdjList.get('F'))
 
-console.log('Depth-first search');
+console.log('Depth-first search. First node = A');
 depthFirstSearch(g2, 'A');
